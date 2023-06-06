@@ -1,0 +1,174 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url(static/Outfit-Regular.ttf)
+    format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Outfit-ex-light';
+    src: url(static/Outfit-ExtraLight.ttf)
+    format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: 'Outfit-light';
+    src: url(static/Outfit-Light.ttf)
+    format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: hsl(0, 0%, 100%);
+    font-family: 'Outfit';
+}
+
+main#container{
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(215, 51%, 12%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/*** Config 3 caixas ***/
+
+div#box-externa-2{
+    width: 390px;
+    height: 585px;
+    background: hsla(213, 52%, 12%, 0.027);
+    position: absolute;
+    border-radius: 50px;
+    transform: translateY(1.5%);
+}
+
+div#box-externa{
+    width: 335px;
+    height: 535px;
+    background: hsla(214, 53%, 6%, 0.068);
+    position: relative;
+    border-radius: 40px;
+}
+
+
+div#box-interna{
+    width: 300px;
+    height: 500px;
+    background: hsl(218, 45%, 21%);
+    position: absolute;
+    border-radius: 15px;
+    transform: translateY(-3%);
+}
+
+
+/*** Conteudo do card principal ***/
+
+div#conteudo-box-interna{
+    text-align: center;
+}
+
+div#conteudo-box-interna img{
+    width: 85%;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#titulo{
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffffdc;
+}
+
+/*** Tropa dos paragrafos ***/
+
+p#paragrafo{
+    font-family: 'Outfit-ex-light';
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+    color: #ffffff9d;
+    display: block;
+}
+
+p#etherium{
+    background: url(images/icon-ethereum.svg) no-repeat;
+    padding-left: 15px;
+    display: inline;
+    font-size: 14px;
+    color: hsl(178, 100%, 50%);
+    margin-right: 85px;
+}
+
+p#clocker{
+    font-family: 'Outfit-light';
+    background: url(images/icon-clock.svg) no-repeat;
+    padding-left: 25px;
+    display: inline;
+    font-size: 14px;
+    color: #ffffff83;
+}
+
+p#clocker::after{
+    content: '';
+    width: 260px;
+    height: 1px;
+    background: #ffffff1c;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/*** Tropa do rodape ***/
+
+p#imagem img{
+    display: inline;
+    width: 10%;
+    border: 1px solid #ffffffbd;
+    float: left;
+    transform: translateY(-75%);
+    margin-left: 20px;
+    border-radius: 100%;
+}
+
+p#criador{
+    font-family: 'Outfit-light';
+    display: inline;
+    color: #ffffff7e;
+    font-size: 14px;
+    margin-right: 65px;
+}
+
+p#criador span{
+    color: #ffffffdc;
+}
+
+/*** Tropa do hover ***/
+
+div#conteudo-box-interna img:hover{
+   cursor: pointer;
+   opacity: 0.5;
+}
+
+
+
+
+#titulo:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+p#criador span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
